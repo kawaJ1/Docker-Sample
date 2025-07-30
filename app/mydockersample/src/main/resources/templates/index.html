@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Message Sample</title>
+</head>
+<body>
+<h1>Spring boot × MySQL Docker Sample Project</h1>
+
+<!-- ユーザーがボタンを押すと、Spring Bootアプリケーションの/showエンドポイントにアクセスしてメッセージの取得、表示処理が行われます。 -->
+<form action="/show" method="post">
+    <button type="submit">Show Message</button>
+</form>
+
+<!-- Thymeleafの式。コントローラーから渡された変数をこの段落タグ内に表示します。-->
+<p th:text="${message}"></p>
+</body>
+</html>
