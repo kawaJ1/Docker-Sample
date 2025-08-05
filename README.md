@@ -12,7 +12,6 @@
 
 ## 🗂️ プロジェクト構成
 
-```
 ```bash
 Docker-Sample/
 ├── docker-compose.yml   ← アプリとDBを連携するためのコンテナ定義ファイル
