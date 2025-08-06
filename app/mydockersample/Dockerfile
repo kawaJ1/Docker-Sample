@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apk update && apk add --no-cache bash
 
-COPY . .
+COPY mydockersample/ /app/
 
 RUN ./mvnw -B -ntp dependency:go-offline
 RUN ./mvnw clean package -DskipTests
